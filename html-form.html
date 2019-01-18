@@ -32,7 +32,40 @@
                 <td>$11.99</td>
             </tr>
         </table>
-        <p><div>Place your orders here! You know you want to.</div></p>
-        <br>
+        <p>
+            <div>Place your orders here! You know you want to.</div>
+        </p>
+        <form>
+            First Name: <input type="text" name="firstname">
+            <br>Last Name: <input type="text" name="lastname">
+            <br>Melon Type:
+                <select name="melontype">
+                    <option value="watermelon">Watermelon</option>
+                    <option value="honeydew">Honeydew</option>
+                    <option value="canteloupe">Canteloupe</option>
+                    <option value="crenshaw">Crenshaw</option>
+                    <option value="canary">Canary</option>
+                </select>
+            <br>Quantity*:
+                <textarea name="quantity"></textarea>
+            <br>Delivery Time:
+                <input type="radio" name="ampm" value="am">12:00am-12:00pm
+                <input type="radio" name="ampm" value="pm">12:00pm-12:00am
+                <input type="radio" name="ampm" value="illusion">Time is an illusion
+            <br>Returning Customers?
+                <input type="radio" name="returningcustomer" value='Yes'>Yes
+                <input type="radio" name="returningcustomer" value='No'>No
+            <br>For Statistical Purposes:
+                <input type="checkbox" name="customerselectionstats" value ="dog">Dog
+                <input type="checkbox" name="customerselectionstats" value ="dog">Cat
+                <input type="checkbox" name="customerselectionstats" value ="dog">Hedgehog
+                <input type="checkbox" name="customerselectionstats" value ="dog">Balloonicorn
+                <input type="checkbox" name="customerselectionstats" value ="dog">Yak
+            <br>
+                <input type="submit">
+        </form>
+        <footer>
+            *Quantities given are by the flat. 
+        </footer>
     </body>
 </html>
